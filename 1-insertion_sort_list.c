@@ -57,14 +57,14 @@ void insertion_sort_list(listint_t **list)
 	int x;
 	size_t i, j, size = len_dlistint(*list);
 	listint_t *curr, *prev;
-	
+
 	for (i = 1; i < size; i++)
 	{
 		for (j = i; j > 0; j--)
 		{
 			curr = get_at_index(*list, j);
 			prev = get_at_index(*list, j - 1);
-			
+
 			if (curr->n < prev->n)
 			{
 				x = curr->n;

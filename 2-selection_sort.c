@@ -11,11 +11,11 @@ void selection_sort(int *array, size_t size)
 {
 	size_t i, j, min_idx;
 	int x;
-	
+
 	for (i = 0; i < size; i++)
 	{
 		min_idx = i;
-		
+
 		for (j = i; j < size; j++)
 		{
 			if (array[j] < array[min_idx])
